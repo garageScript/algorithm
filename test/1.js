@@ -1,6 +1,5 @@
 const expect = require('chai').expect;
 const solution = require('../solutions/1');
-// solution = require('../yourSolution').solution;
 
 const test = (a, result) => {
   if(solution(a) === result) {
