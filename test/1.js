@@ -1,6 +1,4 @@
-const expect = require('chai').expect;
 const solution = require('../solutions/1');
-// solution = require('../yourSolution').solution;
 
 const test = (a, b, result) => {
   if(solution(a,b) === result) {
@@ -11,3 +9,4 @@ const test = (a, b, result) => {
 };
 
 test(5,6, 11);
+test(1,3,4);
