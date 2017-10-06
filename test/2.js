@@ -9,4 +9,6 @@ const testing = (a,b,c,max) =>{
 testing(1,1,2,2);
 testing(1,2,1,2);
 testing(2,1,10,2);
+testing(2,1,10,10);
+testing(2,1,2,10);
 
