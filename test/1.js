@@ -1,13 +1,13 @@
-const expect = require('chai').expect;
-const solution = require('../solutions/1');
-// solution = require('../yourSolution').solution;
+const add = require('../solutions/1.js');
 
-const test = (a, b, result) => {
-  if(solution(a,b) === result) {
-    console.log(`Correct`);
-  } else {
-    console.log(`Wrong. Expected:`, result);
+const test= (input1,input2,result)=>{
+  if(add(input1,input2)==result){
+    console.log('Correct');
+  }else{
+    console.log('Wrong expected result is: ' + add(input1,input2));
   }
-};
+}
 
-test(5,6, 11);
+test(4,10,14);
+test(5,8,13);
+test(5,8,3);
