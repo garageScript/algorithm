@@ -1,13 +1,13 @@
-const expect = require('chai').expect;
-const solution = require('../solutions/1');
-// solution = require('../yourSolution').solution;
+const biggest = require('../solutions/1.js');
 
-const test = (a, b, result) => {
-  if(solution(a,b) === result) {
+const test = (a, b, c, result) => {
+  if(biggest(a,b,c) === result) {
     console.log(`Correct`);
   } else {
-    console.log(`Wrong. Expected:`, result);
+    console.log('wrong');
   }
 };
 
-test(5,6, 11);
+test(5,6,3,6);
+test(9,2,4,9);
+test(5,3,6,3);
