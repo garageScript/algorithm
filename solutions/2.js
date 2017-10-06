@@ -4,8 +4,7 @@ const greatest = (a,b,c)=>{
   }
   if(b>a && b>c){
     return b
-  }
-  if(c>a && c>b){
+  }else{
     return c
   }
 }
