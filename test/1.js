@@ -1,13 +1,12 @@
-const expect = require('chai').expect;
-const solution = require('../solutions/1');
-// solution = require('../yourSolution').solution;
+const add = require('./solutions.js');
 
-const test = (a, b, result) => {
-  if(solution(a,b) === result) {
-    console.log(`Correct`);
-  } else {
-    console.log(`Wrong. Expected:`, result);
+const addTest = (num1,num2,res) => {
+  if (add(num1,num2) == res ){
+    console.log('Test case Passed!');
   }
-};
+  else{
+    console.log('Failed');
+  }
+}
 
-test(5,6, 11);
+addTest(2,3,5);
