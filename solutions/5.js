@@ -1,14 +1,9 @@
 const callX = (func,num) => {
-  if (num==0){
+  if (num <= 0){
     return;
   }
-  printFunc();
+  func();
   callX(func,num-1);
 }
 
-const printFunc=()=>{
-  console.log('Working');
-}
-
-
-callX(printFunc,5);
+module.exports = callX;
