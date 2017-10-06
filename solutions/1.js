@@ -1,4 +1,7 @@
-const solution = (a, b) => {
-  // do something here!
-};
-module.exports = solution;
+///sum of two numbers
+
+const sum = (num1,num2)=>{
+  return num1+num2;
+}
+
+module.exports = sum;
