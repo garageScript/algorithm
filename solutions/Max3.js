@@ -7,7 +7,4 @@ const Max3=(x,y,z)=>{
   }
     return x;
 }
-console.log(Max3(1,3,5));
-console.log(Max3(5,3,1));
-console.log(Max3(3,5,1));
-//module.exports = Max3;
+module.exports = Max3;
