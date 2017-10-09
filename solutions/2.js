@@ -1,5 +1,4 @@
-const solution = (num1, num2, num3, i = 1, biggestNum) => {
-  let threeNums = [num1, num2, num3];
+const solution = (num1, num2, num3, i = 1, threeNums = [num1, num2, num3], biggestNum) => {
   if(i >= threeNums.length){
     return biggestNum;
   }
@@ -8,7 +7,7 @@ const solution = (num1, num2, num3, i = 1, biggestNum) => {
   } else {
     biggestNum = threeNums[i];
   }
-  return solution(num1, num2, num3, i + 1, biggestNum);
+  return solution(num1, num2, num3, i + 1, threeNums = [num1, num2, num3], biggestNum);
 };
 
 module.exports = solution;
