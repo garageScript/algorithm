@@ -1,12 +1,13 @@
 const Max3=(x,y,z)=>{
   if(z>y && z>x){
     return z;
-  }e
-  else if(y>x && y>z){
+  }
+   if(y>x && y>z){
     return y;
   }
-  else {
     return x;
-  }
 }
-module.exports = Max3;
+console.log(Max3(1,3,5));
+console.log(Max3(5,3,1));
+console.log(Max3(3,5,1));
+//module.exports = Max3;
