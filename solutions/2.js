@@ -7,7 +7,7 @@ const solution = (num1, num2, num3, i = 1, threeNums = [num1, num2, num3], bigge
   } else {
     biggestNum = threeNums[i];
   }
-  return solution(num1, num2, num3, i + 1, threeNums = [num1, num2, num3], biggestNum);
+  return solution(num1, num2, num3, i + 1, threeNums, biggestNum);
 };
 
 module.exports = solution;
