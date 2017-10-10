@@ -5,9 +5,9 @@ const func = () => {
   count = count + 1;
 }
 
-const test = (numOfCalls, numToTest) => {
-  solution(func, numOfCalls);
-  if(numToTest == count){
+const test = (num) => {
+  solution(func, num);
+  if(num == count){
     console.log('Correct!');
   } else {
     console.log('Wrong.');
@@ -15,5 +15,6 @@ const test = (numOfCalls, numToTest) => {
   count = 0;
 }
 
-test(5, 5);
-test(5, 4);
+test(5);
+test(0);
+test(3);
