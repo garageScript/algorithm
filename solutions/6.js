@@ -1,11 +1,8 @@
 const callX2=(func,num,i=1)=>{
-  if (num <= 0){
+  if ((num <= 0) || (num === i)){
     return;
   }
   func(i);
-  if (num === i){
-    return;
-  }
   return callX2(func,num, i+1);
 }
 

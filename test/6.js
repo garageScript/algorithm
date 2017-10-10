@@ -5,7 +5,6 @@ const testing = (num) => {
   let flag = true;
 
   const testFunc = (a) =>{
-    console.log(a);
     count = count + 1;
     if(a!=count){
       flag = false;
