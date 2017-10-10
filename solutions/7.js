@@ -1,11 +1,7 @@
-const getDivisors = (num,i=num) => {
-  if (i === 0){
-    return;
+const getDivisors = (num,i=num-1) => {
+  if ((num % i) == 0){
+    return i;
   }
-  if ((num % i) === 0){
-    console.log(i);
-  }
-  getDivisors(num,i-1);
+ return getDivisors(num,i-1);
 }
-
-getDivisors(10);
+module.exports = getDivisors;
