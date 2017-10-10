@@ -9,3 +9,5 @@ const callX = (func, n) => {
   func();
   return callX(func, n - 1);
 };
+
+module.exports = callX;
