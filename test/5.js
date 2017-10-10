@@ -1,49 +1,19 @@
 const callX = require('../solutions/5.js');
 
+const testing = (num) => {
+  let sum =0;
+  const funct = ()=>{
+    sum = sum + 1;
+  }
 
-//test case 1
-let sum = 0;
+  callX(funct,num);
 
-const func=()=>{
-  sum = sum + 1;
+  if (sum == num){
+    console.log('Correct');
+  }else{
+    console.log('Wrong');
+  }
 }
-
-//callX(func,20);
-
-if (sum === 20){
-  console.log('Correct');
-}else{
-  console.log('Wrong');
-}
-
-//test case 2
-let sum = 0;
-
-const func=()=>{
-  sum = sum + 1;
-}
-
-callX(func,-5);
-
-if (sum === 0){
-  console.log('Correct');
-}else{
-  console.log('Wrong');
-}
-
-//test case 3
-let sum = 0;
-
-const func=()=>{
-  sum = sum + 1;
-}
-
-callX(func,0);
-
-if (sum === 0){
-  console.log('Correct');
-}else{
-  console.log('Wrong');
-}
-
-
+testing(3);
+testing(0);
+testing(-3);
