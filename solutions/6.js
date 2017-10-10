@@ -1,13 +1,12 @@
-const callX2=(func,num)=>{
-  if (num == 0){
+const callX2=(func,num,i=1)=>{
+  if (num <= 0){
     return;
   }
-  printFunc(num);
-  callX2(func, num-1);
+  func(i);
+  if (num === i){
+    return;
+  }
+  return callX2(func,num, i+1);
 }
 
-const printFunc = (number) => {
-  console.log(`Number :${number}`);
-}
-
-callX2(printFunc,3);
+module.exports = callX2;
