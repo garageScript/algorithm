@@ -10,3 +10,4 @@ const test = (num1, num2, result) => {
 
 test(3, 6, 3);
 test(10, 100, 10);
+test(15, 6, 3);
