@@ -1,7 +1,10 @@
 const solution = (num, i = 2) => {
-  const checkPrime = (n) => {
-    for (i = 2; i <= n; i++) {
-      if (n % i === 0) return false;
+  const checkPrime = (n, i = 2) => {
+    if (i <= n) {
+      if (n % i == 0) {
+        return false;
+      }
+      return checkPrime(n, i + 1);
     }
     return n !== 1;
   };
@@ -11,7 +14,7 @@ const solution = (num, i = 2) => {
       if (num % i === 0) {
         return num/i;
       } else {
-        solution(num, i + 1);
+        return solution(num, i + 1);
       }
     } else {
       return 1;
