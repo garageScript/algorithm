@@ -1,4 +1,5 @@
-const solution = (num1, num2, i = 1, smaller, gcd) => {
+const solution = (num1, num2, i = 1, gcd) => {
+  let smaller;
   if (num1 < num2) {
     smaller = num1;
   } else {
@@ -8,7 +9,7 @@ const solution = (num1, num2, i = 1, smaller, gcd) => {
     if (((num1 % i) && (num2 % i)) == 0) {
       gcd = i;
     }
-    return solution(num1, num2, i + 1, smaller, gcd);
+    return solution(num1, num2, i + 1, gcd);
   }
   return gcd;
 };
