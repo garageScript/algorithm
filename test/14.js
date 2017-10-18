@@ -8,4 +8,4 @@ const test = (num, result) => {
   }
 };
 
-test(7, [1, 2, 3, 5, 7]);
+test(7, [2, 3, 5, 7]);

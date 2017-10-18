@@ -7,7 +7,6 @@ const solution = (num, arr = []) => {
     }
     return solution(num - 1, arr);
   }
-  arr.unshift(1);
   return arr;
 };
 
