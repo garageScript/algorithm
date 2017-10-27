@@ -1,11 +1,12 @@
 const solution = require('../solutions/filteredObject.js');
 
-const objA = {                                                                                     '5':"blah blah",
-  'name': "ho",                                                                                    'zolo': "4thech"                                                                               }
+const objA = {                                                                 '5':"blah blah",
+  'name': "ho",                                                                'zolo': "4thech"                                                        
+}
 
 const funct = (k, v, objectC={}, i=0)=>{
   if(i === k.length){
-    return objectC;                                                                                   }                                                                                              if(v[i].length > 3){                                                                                                                                                                               objectC[k[i]]=v[i];                                                                             }
+    return objectC;                                                          }                                                                              if(v[i].length > 3){                                                              objectC[k[i]]=v[i];                                                         }
   return funct(k, v, objectC, i+1);
 }
 
@@ -14,9 +15,9 @@ const test = (object, functions, result, i=0)=>{
     return;
   }
   if(Object.values(solution(object,functions))[i].length == Object.values(result)[i].length){
-    console.log('equal, and above 3 characters');
+    console.log('equal objects, and above 3 characters');
   }else{
-    console.log('not equal, and below 3 characters');
+    console.log('not equal objects, and below 3 characters');
   }
   return test(object, functions, result, i+1);
 
