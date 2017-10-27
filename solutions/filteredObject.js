@@ -1,3 +1,4 @@
+/*
 const objA = {
   '5':"blah blah",
   'name': "ho",
@@ -13,8 +14,10 @@ const funct = (k, v, objectC={}, i=0)=>{
   }
   return funct(k, v, objectC, i+1);
 }
+*/
 
-const filterObj = (obj, func, i=0)=>{
+const filterObj = (obj, func)=>{
   return func(Object.keys(obj), Object.values(obj));
 }
-console.log(filterObj(objA,funct));
+//console.log(filterObj(objA,funct));
+module.exports = filterObj;
